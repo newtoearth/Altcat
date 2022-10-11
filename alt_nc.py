@@ -71,7 +71,6 @@ def main():
 
 def client_sender(buffer):
 	client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 	try:
 		client.connect((target,port))
 		if len(buffer):
